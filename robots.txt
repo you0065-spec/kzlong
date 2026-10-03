@@ -1,0 +1,12 @@
+# =====================================================
+#  深圳市科中龙科技有限公司 — 官网 robots.txt
+#  允许所有搜索引擎 / AI 爬虫抓取
+# =====================================================
+
+User-agent: *
+Allow: /
+
+# 站点地图（部署后如最终域名为 xxx.github.io/kzlong 则无需改动；
+# 若绑定自定义域名，请把下面地址换成你的正式域名根路径）
+# 例如绑定 https://kzlgd.com 后改为：Sitemap: https://kzlgd.com/sitemap.xml
+Sitemap: https://you0065-spec.github.io/kzlong/sitemap.xml
