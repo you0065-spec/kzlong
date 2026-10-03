@@ -6,6 +6,9 @@
   <title>关于我们 — 深圳市科中龙科技有限公司</title>
   <meta name="description" content="深圳市科中龙科技有限公司位于深圳，是一家一站式硬件方案设计服务商，提供嵌入式软硬件开发、物联网（IoT）智能硬件整体解决方案与量产制造服务。" />
   <link rel="canonical" href="https://kzlgd.de5.net/about.html" />
+  <link rel="alternate" hreflang="zh" href="https://kzlgd.de5.net/about.html" />
+  <link rel="alternate" hreflang="en" href="https://kzlgd.de5.net/en/about.html" />
+  <link rel="alternate" hreflang="x-default" href="https://kzlgd.de5.net/about.html" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -24,7 +27,12 @@
         <a href="services.html">服务与方案</a>
         <a href="contact.html">联系与合作</a>
       </nav>
-      <a class="header-cta" href="contact.html">合作咨询</a>
+      <div class="header-right">
+        <div class="lang-switch" aria-label="语言切换 Language">
+          <span class="cur">中</span><span class="sep">/</span><a href="en/about.html" data-manual="en" lang="en" title="English site">EN</a>
+        </div>
+        <a class="header-cta" href="contact.html">合作咨询</a>
+      </div>
       <button class="nav-toggle" aria-label="菜单" aria-expanded="false">☰</button>
     </div>
   </header>
@@ -145,5 +153,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/lang.js"></script>
 </body>
 </html>
