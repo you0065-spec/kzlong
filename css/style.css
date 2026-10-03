@@ -324,3 +324,31 @@ section { padding: 64px 0; }
   .nav a[aria-current="page"]::after { display: none; }
   .header-cta { display: none; }
 }
+
+/* ---------- 顶部右侧组（咨询按钮 + 语言切换） ---------- */
+.header-right { display: flex; align-items: center; gap: 12px; flex: 0 0 auto; }
+
+/* ---------- 语言切换 ---------- */
+.lang-switch {
+  display: inline-flex; align-items: center; gap: 3px;
+  border: 1px solid var(--border); border-radius: 999px;
+  padding: 5px 12px; font-size: 13px; font-weight: 600;
+  background: var(--surface-2); white-space: nowrap; color: var(--text-weak);
+}
+.lang-switch a { color: var(--text-weak); text-decoration: none; }
+.lang-switch a:hover { color: var(--accent); }
+.lang-switch a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+.lang-switch .cur { color: var(--accent); }
+.lang-switch .sep { color: var(--text-weak); opacity: .5; font-weight: 400; padding: 0 1px; }
+
+/* ---------- 页脚 Google 翻译组件容器（英文页） ---------- */
+.translate-box { display: inline-block; }
+.translate-box .goog-te-gadget { font-size: 12px !important; }
+.translate-box .goog-te-gadget a { text-decoration: none !important; }
+.translate-box iframe { vertical-align: middle; }
+
+/* 语言切换移动端微调（放在基础样式之后以覆盖） */
+@media (max-width: 768px) {
+  .lang-switch { padding: 4px 10px; font-size: 12px; }
+  .header-right { gap: 8px; }
+}
